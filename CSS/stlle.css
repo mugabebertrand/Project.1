@@ -1,0 +1,475 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+}
+
+/* Header and Navigation */
+
+header {
+
+    background-color: #6a0572; /* A blue tone */
+
+    color: white;
+
+    padding: 1rem 0;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+}
+
+.logo img {
+
+    height: 50px; /* Adjust as needed for your logo */
+
+    width: auto;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+}
+
+nav ul li {
+
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+
+}
+
+nav ul li a:hover {
+
+    color: #ffd700; /* Gold on hover */
+
+}
+
+/* Main Content Styling */
+
+main {
+
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Hero Section */
+
+.hero {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background-color: #e0b0ff; /* blue */
+
+    border-radius: 8px;
+
+    margin-bottom: 30px;
+
+}
+
+.hero h1 {
+
+    font-size: 2.5em;
+
+    color: #6a0572;
+
+    margin-bottom: 10px;
+
+}
+
+.hero p {
+
+    font-size: 1.2em;
+
+    color: #555;
+
+    margin-bottom: 20px;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    background-color: #6a0572;
+
+    color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.button:hover {
+
+    background-color: #9d2ecb;
+
+}
+
+/* About Us Section */
+
+.about-us {
+
+    padding: 20px 0;
+
+    line-height: 1.6;
+
+}
+
+.about-us h2 {
+
+    color: #6a0572;
+
+    margin-bottom: 15px;
+
+}
+
+/* Profiles Section (Multi-Column Layout) */
+
+.profiles-section {
+
+    padding: 20px 0;
+
+}
+
+.profiles-section h2 {
+
+    text-align: center;
+
+    color: #6a0572;
+
+    margin-bottom: 30px;
+
+}
+
+.profile-gallery {
+
+    column-count: 2; /* Two columns */
+
+    column-gap: 30px; /* Gap between columns */
+
+    column-rule: 1px solid #ddd; /* Rule between columns */
+
+}
+
+.profile-card {
+
+    background-color: #f9f9f9;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    margin-bottom: 20px; /* Space between cards */
+
+    break-inside: avoid-column; /* Prevent card from breaking across columns */
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+.profile-card img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 4px;
+
+    margin-bottom: 15px;
+
+}
+
+.profile-card h3 {
+
+    color: #6a0572;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+
+}
+
+.profile-card p {
+
+    font-size: 0.95em;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+
+}
+
+.button-small {
+
+    display: inline-block;
+
+    background-color: #8c52ff;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 0.9em;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.button-small:hover {
+
+    background-color: #6a0572;
+
+}
+
+/* Contact Section (Form) */
+
+.contact-section {
+
+    padding: 20px 0;
+
+}
+
+.contact-section h2 {
+
+    color: #6a0572;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+}
+
+.contact-section p {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 1.1em;
+
+}
+
+form {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border: 1px solid #eee;
+
+    border-radius: 8px;
+
+    background-color: #fcfcfc;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #555;
+
+}
+
+.form-group input[type="text"],
+
+.form-group input[type="email"],
+
+.form-group textarea {
+
+    width: calc(100% - 20px); /* Adjust for padding */
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    font-size: 1em;
+
+}
+
+.form-group input[type="text"]:focus,
+
+.form-group input[type="email"]:focus,
+
+.form-group textarea:focus {
+
+    border-color: #6a0572;
+
+    outline: none;
+
+    box-shadow: 0 0 5px rgba(106, 5, 114, 0.3);
+
+}
+
+.form-group textarea {
+
+    resize: vertical; /* Allow vertical resizing */
+
+}
+
+.required {
+
+    color: red;
+
+    margin-left: 5px;
+
+    font-size: 0.9em;
+
+}
+
+.contact-section .button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 1.1em;
+
+    cursor: pointer;
+
+    border: none;
+
+}
+
+/* Footer */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #6a0572;
+
+    color: white;
+
+    margin-top: 30px;
+
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Basic Responsiveness */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    nav ul {
+
+        margin-top: 15px;
+
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+
+        margin: 5px 0;
+
+    }
+
+    .hero h1 {
+
+        font-size: 2em;
+
+    }
+
+    .profile-gallery {
+
+        column-count: 1; /* Single column on smaller screens */
+
+    }
+
+}
